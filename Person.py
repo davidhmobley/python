@@ -2,7 +2,7 @@ class Person:
 #    House.House(House) == None
     address = ""
 
-    def setAddress(addr):
+    def setAddress(self, addr):
         self.address = addr
 
     def __init__(self, name, age, eyeColor):

@@ -11,13 +11,10 @@ h1 = House.House("780 Springvale Road", 24, "Red")
 print("\nHouse...")
 print(h1)
 
-print("\nTest")
-print(h1.getAddress())
-
 p1.setAddress(h1.getAddress())
 p2.setAddress(h1.getAddress())
 #print(h1)
 
-print("last time...")
+print("\nlast time...")
 print(p1)
 print(p2)
