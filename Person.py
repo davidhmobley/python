@@ -1,10 +1,9 @@
-import House
-
 class Person:
 #    House.House(House) == None
+    address = ""
 
-    def setHouse(House):
-        self.house = House
+    def setAddress(addr):
+        self.address = addr
 
     def __init__(self, name, age, eyeColor):
         self.name = name
@@ -12,7 +11,7 @@ class Person:
         self.eyeColor = eyeColor
     
     def __str__(self):
-        return f"{self.name} is {self.age}, and has eye color: {self.eyeColor} and lives at {self.house.address}"
+        return f"{self.name} is {self.age}, and has eye color: {self.eyeColor} and lives at {self.address}"
         
         
 #person1 = Person("David", 65, "blue")
