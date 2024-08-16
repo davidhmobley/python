@@ -1,6 +1,10 @@
+import House
+
 class Person:
-    def setHouse(house):
-        self.house = house
+#    House(House) == None
+
+    def setHouse(House):
+        self.house = House
 
     def __init__(self, name, age, eyeColor):
         self.name = name
