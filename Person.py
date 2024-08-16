@@ -12,7 +12,7 @@ class Person:
         self.eyeColor = eyeColor
     
     def __str__(self):
-        return f"{self.name} is {self.age}, and has eye color: {self.eyeColor}"
+        return f"{self.name} is {self.age}, and has eye color: {self.eyeColor} and lives at {self.house.address}"
         
         
 #person1 = Person("David", 65, "blue")
