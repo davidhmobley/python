@@ -19,11 +19,13 @@ print("\nlast time...")
 print(p1)
 print(p2)
 
-print("\nRead a file")
+print("\nRead a file...")
 try:
 	f = open("./values")
 	for line in f:
 		x = line.split()
-		print("\nFirst Name: " + x[0] + " Middle Name: " + x[1] + " Last Name: " + x[2])
+		print("FirstName: " + x[0] + " MiddleName: " + x[1] + " LastName: " + x[2])
 except:
 	print("Exception!!!")
+finally:
+	f.close()
