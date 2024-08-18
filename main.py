@@ -18,3 +18,12 @@ p2.setAddress(h1.getAddress())
 print("\nlast time...")
 print(p1)
 print(p2)
+
+print("\nRead a file")
+try:
+	f = open("./values")
+	for line in f:
+		x = line.split()
+		print("\nFirst Name: " + x[0] + " Middle Name: " + x[1] + " Last Name: " + x[2])
+except:
+	print("Exception!!!")
