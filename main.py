@@ -24,7 +24,10 @@ try:
 	f = open("./values")
 	for line in f:
 		x = line.split()
-		print("FirstName: " + x[0] + " MiddleName: " + x[1] + " LastName: " + x[2])
+		if len(x) == 3:
+			print("FirstName: " + x[0] + " MiddleName: " + x[1] + " LastName: " + x[2])
+		elif len(x) == 2:
+			print("FirstName: " + x[0] + " NoMiddleName LastName: " + x[1])
 except:
 	print("Exception!!!")
 finally:
