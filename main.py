@@ -28,6 +28,8 @@ try:
 			print("FirstName: " + x[0] + " MiddleName: " + x[1] + " LastName: " + x[2])
 		elif len(x) == 2:
 			print("FirstName: " + x[0] + " NoMiddleName LastName: " + x[1])
+		elif len(x) == 1:
+			print("FirstName: " + x[0] + " NoMiddleName NoLastName")
 except:
 	print("Exception!!!")
 finally:
