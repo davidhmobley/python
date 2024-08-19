@@ -12,9 +12,9 @@ class Person:
     
     def __str__(self):
         if self.address == "":
-            return f"{self.name} is {self.age}, and has eye color: {self.eyeColor}"
+            return f"{self.name} is {self.age}. Has {self.eyeColor} eyes"
         else:
-            return f"{self.name} is {self.age}, and has eye color: {self.eyeColor} and lives at {self.address}"
+            return f"{self.name} is {self.age}. Has {self.eyeColor} eyes and lives at {self.address}"
         
         
 #person1 = Person("David", 65, "blue")
