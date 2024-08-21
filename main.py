@@ -20,9 +20,16 @@ print(p1)
 print(p2)
 
 # lists of nametypes
+print("init nametypes")
 fNames = []
+fNamesSet = {""}
+fNamesSet.clear()
 mNames = []
+mNamesSet = {""}
+mNamesSet.clear()
 lNames = []
+lNamesSet = {""}
+lNamesSet.clear()
 
 print("\nRead a file...")
 try:
@@ -34,13 +41,22 @@ try:
 			fNames.append(x[0])
 			mNames.append(x[1])
 			lNames.append(x[2])
+			# no dups
+			fNamesSet.add(x[0])
+			mNamesSet.add(x[1])
+			lNamesSet.add(x[2])
 		elif len(x) == 2:
 			print("FirstName: " + x[0] + " NoMiddleName LastName: " + x[1])
 			fNames.append(x[0])
 			lNames.append(x[1])
+			# no dups
+			fNamesSet.add(x[0])
+			lNamesSet.add(x[1])
 		elif len(x) == 1:
 			print("FirstName: " + x[0] + " NoMiddleName NoLastName")
 			fNames.append(x[0])
+			# no dups
+			fNamesSet.add(x[0])
 except:
 	print("Exception!!!")
 finally:
@@ -53,3 +69,11 @@ print("Middle Names...")
 print( mNames)
 print("Last Names...")
 print(lNames)
+
+# show nametypes w/o duplicates
+print("\nFirst Names (no dups)...")
+print(fNamesSet)
+print("Middle Names (no dups)...")
+print(mNamesSet)
+print("Last Names (no dups)...")
+print(lNamesSet)
