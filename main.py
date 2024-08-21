@@ -63,11 +63,14 @@ finally:
 	f.close()
 
 # show nametypes
-print("\nFirst Names...")
+print("\nFirst Names (sorted)...")
+fNames.sort()
 print(fNames)
-print("Middle Names...")
+print("Middle Names (sorted)...")
+mNames.sort()
 print(mNames)
-print("Last Names...")
+print("Last Names (sorted)...")
+lNames.sort()
 print(lNames)
 
 # show nametypes w/o duplicates
