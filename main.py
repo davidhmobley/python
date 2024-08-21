@@ -64,9 +64,9 @@ finally:
 
 # show nametypes
 print("\nFirst Names...")
-print( fNames)
+print(fNames)
 print("Middle Names...")
-print( mNames)
+print(mNames)
 print("Last Names...")
 print(lNames)
 
