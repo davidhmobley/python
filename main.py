@@ -1,9 +1,15 @@
 import Person
 import House
 
+# get users name
+userName = ""
+while userName == "":
+	userName = input("What is your name? ")
+print("Welcome to python, " + userName)
+
 p1 = Person.Person("David", 65, "blue")
 p2 = Person.Person("Susan", 64, "green")
-print("first time...")
+print("\nfirst time...")
 print(p1)
 print(p2)
 
