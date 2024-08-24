@@ -5,6 +5,7 @@ import House
 userName = ""
 while userName == "":
 	userName = input("What is your name? ")
+	userName = userName.strip()
 print("Welcome to python, " + userName)
 
 p1 = Person.Person("David", 65, "blue")
