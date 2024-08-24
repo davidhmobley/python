@@ -40,7 +40,7 @@ lNamesSet.clear()
 
 print("\nRead a file...")
 try:
-	f = open("/Users/david/python/values")
+	f = open("./values")
 	for line in f:
 		x = line.split()
 		if len(x) == 3:
