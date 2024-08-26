@@ -6,7 +6,7 @@ userName = ""
 while userName == "":
 	userName = input("What is your name? ")
 	userName = userName.strip()
-print("Welcome to python, " + userName)
+print("Welcome to python, " + userName + "!")
 
 p1 = Person.Person("David", 65, "blue")
 p2 = Person.Person("Susan", 64, "green")
@@ -53,14 +53,14 @@ try:
 			mNamesSet.add(x[1])
 			lNamesSet.add(x[2])
 		elif len(x) == 2:
-			print("FirstName: " + x[0] + " NoMiddleName LastName: " + x[1])
+			print("FirstName: " + x[0] + " LastName: " + x[1])
 			fNames.append(x[0])
 			lNames.append(x[1])
 			# no dups
 			fNamesSet.add(x[0])
 			lNamesSet.add(x[1])
 		elif len(x) == 1:
-			print("FirstName: " + x[0] + " NoMiddleName NoLastName")
+			print("FirstName: " + x[0])
 			fNames.append(x[0])
 			# no dups
 			fNamesSet.add(x[0])
