@@ -7,6 +7,9 @@ while userName == "":
 	userName = input("What is your name? ")
 	userName = userName.strip()
 print("Welcome to python, " + userName + "!")
+print("\tThere are " + str(len(userName)) + " characters in your name!")
+for char in userName:
+	print("\t" + char)
 
 p1 = Person.Person("David", 65, "blue")
 p2 = Person.Person("Susan", 64, "green")
