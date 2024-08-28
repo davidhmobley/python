@@ -9,7 +9,7 @@ while userName == "":
 print("Welcome to python, " + userName + "!")
 print("\tThere are " + str(len(userName)) + " characters in your name!")
 for char in userName:
-	print("\t" + char)
+	print("\t\t" + char)
 
 p1 = Person.Person("David", 65, "blue")
 p2 = Person.Person("Susan", 64, "green")
