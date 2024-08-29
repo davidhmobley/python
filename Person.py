@@ -5,6 +5,9 @@ class Person:
     def setAddress(self, addr):
         self.address = addr
 
+    def getAddress(self):
+	    return self.address
+
     def __init__(self, name, age, eyeColor):
         self.name = name
         self.age = age

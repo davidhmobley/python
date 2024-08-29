@@ -5,6 +5,9 @@ class House:
 
     def getAddress(self):
         return self.address
+        
+    def setAddress(self, addr):
+        self.address = address
 
     def __init__(self, address, age, color):
         self.address = address
