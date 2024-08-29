@@ -13,6 +13,10 @@ for char in userName:
 
 p1 = Person.Person("David", 65, "blue")
 p2 = Person.Person("Susan", 64, "green")
+# now, overwrite p2
+p2.setName("Rebekah")
+p2.setAge(29)
+p2.setEyeColor("green")
 print("\nfirst time...")
 print(p1)
 print(p2)

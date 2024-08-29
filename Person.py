@@ -1,6 +1,24 @@
 class Person:
     address = ""
 
+    def setName(self, name):
+        self.name = name
+
+    def getName(self):
+	    return self.name
+
+    def setAge(self, age):
+        self.age = age
+
+    def getAge(self):
+	    return self.age
+
+    def setEyeColor(self, color):
+        self.eyeColor = color
+
+    def getEyeColor(self):
+	    return self.eyeColor
+
     def setAddress(self, addr):
         self.address = addr
 
