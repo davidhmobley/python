@@ -1,5 +1,4 @@
 class Person:
-#    House.House(House) == None
     address = ""
 
     def setAddress(self, addr):
@@ -18,6 +17,3 @@ class Person:
             return f"{self.name} is {self.age}. Has {self.eyeColor} eyes"
         else:
             return f"{self.name} is {self.age}. Has {self.eyeColor} eyes and lives at {self.address}"
-        
-        
-#person1 = Person("David", 65, "blue")
