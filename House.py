@@ -9,6 +9,18 @@ class House:
     def setAddress(self, addr):
         self.address = address
 
+    def getAge(self):
+	    return self.age
+
+    def setAge(self, age):
+	    self.age = age
+
+    def getColor(self):
+	    return self.color
+
+    def setColor(self, color):
+	    self.color = color
+
     def __init__(self, address, age, color):
         self.address = address
         self.age = age
