@@ -24,10 +24,11 @@ print(p2)
 h1 = House.House("780 Springvale Road", 24, "Red")
 print("\nHouse...")
 print(h1)
+h2 = House.House("440 Cirle Drive", 100, "Reddish Brown")
+print(h2)
 
 p1.setAddress(h1.getAddress())
-p2.setAddress(h1.getAddress())
-#print(h1)
+p2.setAddress(h2.getAddress())
 
 print("\nlast time...")
 print(p1)
