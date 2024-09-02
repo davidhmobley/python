@@ -6,7 +6,7 @@ userName = ""
 while userName == "":
 	userName = input("What is your name? ")
 	userName = userName.strip()
-print("Welcome to python, " + userName + "!")
+print("Welcome to python, " + userName.swapcase() + "!")
 print("\tThere are " + str(len(userName)) + " characters in your name!")
 for char in userName:
 	print("\t\t" + char)
